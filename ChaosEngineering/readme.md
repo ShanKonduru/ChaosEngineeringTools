@@ -41,12 +41,56 @@ There is another way to get the CPU utilization %, use the following command fro
 ```shell
 wmic cpu get loadpercentage
 ```
-
-
 ## Mac
 
 Open the Activity Monitor (found in the Utilities folder within the Applications folder), go to the "CPU" tab, and check the CPU usage percentage.
 Keep in mind that these tools show the overall CPU utilization for the system, so you might see an increase in CPU usage caused by the utility's processes.
+
+
+# Memory Utilization Utility
+
+This Python utility allows you to increase memory utilization up to a specific percentage for a certain duration. It allocates memory to reach the desired utilization and holds it for the specified duration.
+
+**Disclaimer: Use this utility with caution and only in controlled environments for testing purposes. High memory utilization can impact system performance.**
+
+## Requirements
+
+- Python 3.x
+- `numpy` module: To install, run `pip install numpy`
+- `psutil` module: To install, run `pip install psutil`
+
+## Usage
+
+1. Clone the repository or download the `memory_utilization.py` file.
+
+2. Open a terminal or command prompt and navigate to the directory containing the `memory_utilization.py` file.
+
+3. Run the utility using the following command:
+
+```shell
+python memory_utilization.py
+```
+
+By default, the utility will increase memory utilization to 90% for a duration of 60 seconds. You can modify the target_utilization and duration variables in the script to set your desired values.
+
+After the specified duration has elapsed, the utility will release the allocated memory and the script will exit.
+
+## Checking Memory Utilization
+
+To check memory utilization while the utility is running, you can use system monitoring tools provided by your operating system. Here are a few options for different platforms:
+
+## Linux
+
+Use the free command or the htop command for a more detailed view. Look for the memory utilization percentage in the output.
+
+## Windows
+
+Open the Task Manager (Ctrl+Shift+Esc), go to the "Performance" tab, and observe the memory usage graph or the percentage value.
+
+## Mac
+
+Open the Activity Monitor (found in the Utilities folder within the Applications folder), go to the "Memory" tab, and check the memory utilization percentage.
+Keep in mind that these tools show the overall memory utilization for the system, so you might see an increase in memory usage caused by the utility's memory allocation.
 
 ## Contributing
 

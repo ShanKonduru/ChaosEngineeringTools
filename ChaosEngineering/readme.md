@@ -11,14 +11,14 @@ This Python utility allows you to increase CPU utilization for testing purposes.
 
 ## Usage
 
-1. Clone the repository or download the `cpu_utilization.py` file.
+1. Clone the repository or download the `cpu.py` file.
 
-2. Open a terminal or command prompt and navigate to the directory containing the `cpu_utilization.py` file.
+2. Open a terminal or command prompt and navigate to the directory containing the `cpu.py` file.
 
 3. Run the utility using the following command:
 
    ```shell
-   python cpu_utilization.py
+   python cpu.py
    ```
 
 4. By default, the utility will spawn 4 processes to increase CPU utilization. You can adjust the num_processes variable in the script to control the number of processes.
@@ -61,14 +61,14 @@ This Python utility allows you to increase memory utilization up to a specific p
 
 ## Usage
 
-1. Clone the repository or download the `memory_utilization.py` file.
+1. Clone the repository or download the `memory.py` file.
 
-2. Open a terminal or command prompt and navigate to the directory containing the `memory_utilization.py` file.
+2. Open a terminal or command prompt and navigate to the directory containing the `memory.py` file.
 
 3. Run the utility using the following command:
 
 ```shell
-python memory_utilization.py
+python memory.py
 ```
 
 By default, the utility will increase memory utilization to 90% for a duration of 60 seconds. You can modify the target_utilization and duration variables in the script to set your desired values.

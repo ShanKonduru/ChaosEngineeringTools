@@ -29,13 +29,19 @@ This Python utility allows you to increase CPU utilization for testing purposes.
 
 To check CPU utilization while the utility is running, you can use system monitoring tools provided by your operating system. Here are a few options for different platforms:
 
-## Linux: 
+## Linux
 
 Use the top command or the htop command for a more interactive view. Look for the CPU usage percentage in the output.
 
 ## Windows
 
 Open the Task Manager (Ctrl+Shift+Esc), go to the "Performance" tab, and observe the CPU usage graph or the percentage value.
+There is another way to get the CPU utilization %, use the following command from the command prompt.
+
+```shell
+wmic cpu get loadpercentage
+```
+
 
 ## Mac
 
